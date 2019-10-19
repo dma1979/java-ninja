@@ -2,56 +2,55 @@
 The way how to become Java Ninja. Structural questions and answers for Java fans.
 
 # Question by level
-+ [Juniour Java Developer](#Juniour-developer) ![icon][done]
-+ [Middle Java Developer](#Middle-developer) ![icon][done]
-+ [Seniour Java Developer](#Seniour-developer) ![icon][done]
-+ [Full-stack Java Developer](#Full-stack-developer) ![icon][done]
++ [Juniour Java Developer](#juniour-developer)
++ [Middle Java Developer](#middle-developer)
++ [Seniour Java Developer](#seniour-developer)
++ [Full-stack Java Developer](#full-stack-developer)
 
-# Question by technologines/tools
-+ [Java](#Java) ![icon][done]
-+ [Spring](#Spring) ![icon][done]
-+ [Spring Boot](#Spring-boot) ![icon][done]
-+ [Hibernate](#Hibernate) ![icon][done]
-+ [Html](#Html) ![icon][done]
-+ [Css](#Css) ![icon][done]
-+ [Maven](#maven) ![icon][done]
-+ [Gradle](#gradle) ![icon][done]
-+ [Tomcat](#gradle) ![icon][done]
+# Question by technologies
++ [Java](#java)
++ [Spring](#spring)
++ [Spring Boot](#spring-boot)
++ [Hibernate](#Hibernate)
++ [Html](#html)
++ [Css](#css)
+
+# Question by tools
++ [Maven](#maven)
++ [Gradle](#gradle)
++ [Tomcat](#gradle)
 
 # Question by topics
-+ [OOP](#OOP) ![icon][done]
-+ [Java Basics](#java-basics) ![icon][done]
-+ [Java Core](#java-core) ![icon][done]
-+ [Java Collections](#java-collections) ![icon][done]
-+ [Java 8](#java-8) ![icon][done]
-+ [Concurrency and multi-threading](#concurrency-and-multi-threading) ![icon][done]
-+ [Input-output](#input-output) ![icon][done]
-+ [Servlets, JSP, JSTL](#servlets-jsp-jstl) ![icon][done]
-+ [Databases](#Databases) ![icon][done]
-+ [SQL](#sql) ![icon][done]
-+ [JDBC](#jdbc) ![icon][done]
-+ [Testing](#testing) ![icon][done]
-+ [Logging](#logging) ![icon][done]
-+ [UML](#uml) ![icon][done]
-+ [XML](#xml) ![icon][done]
-+ [Patterns](#patterns) ![icon][done]
-+ [HTML Basics](#basic-html) ![icon][done]
-+ [CSS Basics](#basic-css) ![icon][done]
-
-[done]:done.png
++ [OOP](#OOP)
++ [Java Basics](#java-basics)
++ [Java Core](#java-core)
++ [Java Collections](#java-collections)
++ [Java 8](#java-8)
++ [Concurrency and multi-threading](#concurrency-and-multi-threading)
++ [Input-output](#input-output)
++ [Servlets, JSP, JSTL](#servlets-jsp-jstl)
++ [Databases](#Databases)
++ [SQL](#sql)
++ [JDBC](#jdbc)
++ [Testing](#testing)
++ [Logging](#logging)
++ [UML](#uml)
++ [XML](#xml)
++ [Patterns](#patterns)
++ [HTML Basics](#basic-html)
++ [CSS Basics](#basic-css)
 
 ## ООП
 + [Что такое _ООП_?](oop.md#Что-такое-ООП)
 + [Назовите основные принципы _ООП_.](oop.md#Назовите-основные-принципы-ООП)
 
-[к оглавлению](#Вопросы-для-собеседования-на-java-developer)
+[Table of content](#java-ninja)
 
 ## Java Core
 + [Чем различаются JRE, JVM и JDK?](core.md#Чем-различаются-jre-jvm-и-jdk)
 + [Какие существуют модификаторы доступа?](core.md#Какие-существуют-модификаторы-доступа)
 
-
-[к оглавлению](#Вопросы-для-собеседования-на-java-developer)
+[Table of content](#java-ninja)
 
 ## Java Collections
 + [Что такое _«коллекция»_?](jcf.md#Что-такое-коллекция)
@@ -61,17 +60,17 @@ The way how to become Java Ninja. Structural questions and answers for Java fans
 [Back to the table of content](#Вопросы-для-собеседования-на-java-developer)
 
 ## Java 8
-+ [Какие нововведения, появились в Java 8 и JDK 8?](java8.md#Какие-нововведения-появились-в-java-8-и-jdk-8)
-+ [Что такое _«лямбда»_? Какова структура и особенности использования лямбда-выражения?](java8.md#Что-такое-лямбда-Какова-структура-и-особенности-использования-лямбда-выражения)
-+ [К каким переменным есть доступ у лямбда-выражений?](java8.md#К-каким-переменным-есть-доступ-у-лямбда-выражений)
++ [What Main New Features Were Added in Java 8?](java8.md#What-Main-New-Features-Were-Added-in-Java-8)
++ [What Is a Method Reference?](java8.md#What-Is-a-Method-Reference)
++ [What Is the Meaning of `String::Valueof` Expression?](java8.md#What-Is-the-Meaning-of-String-Valueof-Expression)
 
 
-[к оглавлению](#Вопросы-для-собеседования-на-java-developer)
+[Table of content](#java-ninja)
 
 ## Потоки ввода/вывода в Java
 + [В чём заключается разница между IO и NIO?](io.md#В-чём-заключается-разница-между-io-и-nio)
 
-[к оглавлению](#Вопросы-для-собеседования-на-java-developer)
+[Table of content](#java-ninja)
 
 
 ## Базы данных
@@ -79,26 +78,26 @@ The way how to become Java Ninja. Structural questions and answers for Java fans
 + [Что такое _«система управления базами данных»_?](db.md#Что-такое-система-управления-базами-данных)
 + [Что такое _«реляционная модель данных»_?](db.md#Что-такое-реляционная-модель-данных)
 
-[к оглавлению](#Вопросы-для-собеседования-на-java-developer)
+[Table of content](#java-ninja)
 
 ## SQL
 + [Что такое _«SQL»_?](sql.md#Что-такое-sql)
 + [Какие существуют операторы SQL?](sql.md#Какие-существуют-операторы-sql)
 + [Что означает `NULL` в SQL?](sql.md#Что-означает-null-в-sql)
 
-[к оглавлению](#Вопросы-для-собеседования-на-java-developer)
+[Table of content](#java-ninja)
 
 ## Тестирование
 + [Что такое _«модульное тестирование»_?](test.md#Что-такое-модульное-тестирование)
 + [Что такое _«интеграционное тестирование»_?](test.md#Что-такое-интеграционное-тестирование)
 + [Чем интеграционное тестирование отличается от модульного?](test.md#Чем-интеграционное-тестирование-отличается-от-модульного)
 
-[к оглавлению](#Вопросы-для-собеседования-на-java-developer)
+[Table of content](#java-ninja)
 
 ## Журналирование
 + [Какие существуют типы логов?](log.md#Какие-существуют-типы-логов)  
 + [Из каких частей состоит система журналирования log4j?](log.md#Из-каких-частей-состоит-система-журналирования-log4j)
 + [Что такое _Logger_ в log4j?](log.md#Что-такое-logger-в-log4j)
 
-[к оглавлению](#Вопросы-для-собеседования-на-java-developer)
+[Table of content](#java-ninja)
 
