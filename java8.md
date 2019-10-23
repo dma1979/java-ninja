@@ -12,6 +12,8 @@
 ## Streams
 ## New Date and Time API
 
+[Table of content](#java-8)
+
 ### What are Main New Features Added in Java 8?
 The most significant features are the following:
 + __Lambda Expressions__ − a new language feature allowing treating actions as objects
