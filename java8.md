@@ -2,10 +2,10 @@
 
 # Java 8
 ## General
-+ [What Main New Features Were Added in Java 8?](#What-Main-New-Features-Were-Added-in-Java-8)
++ [What Main New Features Were Added in Java 8?](#what-main-new-features-were-added-in-java-8)
 ## Method References
-+ [What Is a Method Reference?](#What-Is-a-Method-Reference)
-+ [What Is the Meaning of `String::Valueof` Expression?](#What-Is-the-Meaning-of-String-Valueof-Expression)
++ [What Is a Method Reference?](#what-is-a-method-reference)
++ [What Is the Meaning of `String::Valueof` Expression?](#what-is-the-meaning-of-stringvalueof-expression)
 ## Optional
 ## Default Methods
 ## Lambda Expressions
@@ -44,7 +44,7 @@ It has different variations:
 
 [Table of content](#java-8)
 
-###What Is the Meaning of `String::Valueof` Expression?
+### What Is the Meaning of `String::Valueof` Expression?
 It is a static method reference to the valueOf method of the String class.
 
 [Table of content](#java-8)
