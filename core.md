@@ -2,6 +2,7 @@
 
 # Common Java questions
 + [What does PECS stand for?](#what-does-pecs-stand-for)
++ [What are wildcards and their types?](#what-are-wildcards-and-their-types)
 
 [Table of content](#common-java-questions)
 
@@ -16,6 +17,16 @@ The advice boils down to:
 + Use super when you only put values into a data structure
 + Use an explicit type when you plan to do both
 
+[Table of content](#common-java-questions)
+
+### What are wildcards and their types?
+A __wildcard__ is a type argument that uses a question mark `?` , which may or may not
+have an upper or lower bound.<BR/>
+Types of wildcards:
+* Unbounded Wildcards. F.e. `List<?> list`
+* Upper Bounded Wildcards. An upper bounded wildcard uses the `extends` keyword to set a superclass limit. F.e. `List<? extends Number>`
+* Lower Bounded Wildcards. A lower bounded wildcard means any ancestor of your class is acceptable. 
+`super` keyword is used with the wildcard to specify a lower bound. F.e. `List<? super Number>`
 
 [Table of content](#common-java-questions)
 
