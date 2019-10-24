@@ -3,6 +3,7 @@
 # Common Java questions
 + [What does PECS stand for?](#what-does-pecs-stand-for)
 + [What are wildcards and their types?](#what-are-wildcards-and-their-types)
++ [What are covariant, contravariant and invariant?](#what-are-covariant-contravariant-and-invariant)
 
 [Table of content](#common-java-questions)
 
@@ -30,5 +31,17 @@ Types of wildcards:
 
 [Table of content](#common-java-questions)
 
+### What are covariant, contravariant and invariant?
+* The term __covariant__ preserves the ordering of types from more specific to more gen‐
+eral. In Java, f.e. arrays are covariant because String[] is a subtype of Object[]. 
+Also when the `extends` keyword with a wildcard is used.
+
+* The term __contravariant__ goes the other direction. 
+F.e. when the `super` keyword with a wildcard is used.
+
+* An __invariant__ means that the type must be exactly as specified. 
+All parameterized types in Java are invariant unless we use `extends` or `super`.
+
+[Table of content](#common-java-questions)
 
 [All questions](README.md)
