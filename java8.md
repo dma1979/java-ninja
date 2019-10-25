@@ -3,6 +3,7 @@
 # Java 8
 ## General
 + [What Main New Features Were Added in Java 8?](#what-main-new-features-were-added-in-java-8)
++ [What is Functional Interface?](#what-is-functional-interface)
 ## Method References
 + [What Is a Method Reference?](#what-is-a-method-reference)
 + [What Is the Meaning of `String::Valueof` Expression?](#what-is-the-meaning-of-stringvalueof-expression)
@@ -29,12 +30,15 @@ Along with these new features, lots of feature enhancements are done under-the-h
 
 [Table of content](#java-8)
 
+### What is Functional Interface?
+__Functional interface__ is defined as an interface that contains only a single, abstract method (SAM).
+
+[Table of content](#java-8)
 
 ### What Is a Method Reference?
 A _method reference_ is a Java 8 construct that can be used for referencing a method without invoking it. 
 <br/>It is used for treating methods as Lambda Expressions. They only work as syntactic sugar to reduce the verbosity of some lambdas. 
-<br/>This way, the following code `(o) -> o.toString();` can become `Object::toString();`
-
+<br/>This way, the following code `(o) -> o.toString();` can become `Object::toString();` <BR/>
 A method reference can be identified by a double colon separating a class or object name and the name of the method. 
 It has different variations:
 + constructor reference: `String::new;`
