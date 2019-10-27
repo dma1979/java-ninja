@@ -2,9 +2,9 @@
 The way how to become Java Ninja. Structured questions and answers for Java fans.
 
 # Question by level
-+ [Juniour Java Developer](#juniour-developer)
++ [Junior Java Developer](#juniour-developer)
 + [Middle Java Developer](#middle-developer)
-+ [Seniour Java Developer](#seniour-developer)
++ [Senior Java Developer](#seniour-developer)
 + [Full-stack Java Developer](#full-stack-developer)
 
 # Question by technologies
@@ -42,6 +42,7 @@ The way how to become Java Ninja. Structured questions and answers for Java fans
 + [UML](#uml)
 + [XML](#xml)
 + [Patterns](#patterns)
++ [Networking](#networking)
 + [HTML Basics](#basic-html)
 + [CSS Basics](#basic-css)
 

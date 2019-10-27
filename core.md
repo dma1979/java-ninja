@@ -19,7 +19,6 @@ The advice boils down to:
 + Use an explicit type when you plan to do both<BR>
 Example: `<R> Stream<R> map(Function<? super T,? extends R> mapper)` where Function<T,R> consumes a T and produces an R.
 
-
 [Table of content](#common-java-questions)
 
 ### What are wildcards and their types?
