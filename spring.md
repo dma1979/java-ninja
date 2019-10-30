@@ -409,5 +409,42 @@ logging.level.org.springframework=DEBUG
 logging.level.com.demo=INFO
 ```
 
+### What is @MockBean annotation?
+Spring Boot @MockBean annotation makes it easy to replace a bean with a mock in the application context.
+
+@MockBean is used to add mock objects to the Spring application context. 
+The mock will replace any existing bean of the same type in the application context.
+If no bean of the same type is defined, a new one will be added. 
+This annotation is useful in integration tests where a particular bean – for example, an external service – needs to be mocked.
+
+To use this annotation, we have to use @SpringRunner to run the test:
                     
+### What log providers are supported by Spring Boot?
+* [Logback, 5](https://logback.qos.ch)
+* [Log4j 2](https://logging.apache.org/log4j/2.x/)
+* [Java Util Logging](https://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html)
+__Spring Boot 2 doesn’t support the older Log4j framework; it supports its
+successor, Log4j 2!__
+Spring Boot by default uses Logback as the provider for the logging. 
+It does, however, support Java Util Logging as well as Log4j 2.
+To use another logging framework, you will have to first exclude the default framework and include your own. 
+Spring Boot has a spring-boot-starter-log4j2 to include all necessary dependencies for Log4j 2.
+
+### How to configure logging in Sprint Boot?
+Spring Boot uses SLF4J as the logging API, and when writing components you should use those interfaces to write your logging.
+
+By default, Spring Boot will only log to the console.
+The logging levels can be configured through the regular `application.properties` as well as
+patterns can be specified and where to, optionally, write log files to.
+```
+logging.level.org.springframework.web=DEBUG
+
+```
+If you want to write to a file as well, you need to specify either logging.file or logging.path. 
+The first takes the name of the file; the second, the path. 
+The default filename used is spring.log and the default directory used is the Java temp directory.
+```
+logging.file=application.log
+logging.path=/var/log
+```                    
 [All questions](README.md)
