@@ -2,11 +2,33 @@
 
 # Spring framework
 ## Spring
++ [What is Spring Data JPA?](#what-is-spring-data-jpa)
 ## Spring Boot
 + [What is Spring Boot? Why should you use it?](#what-is-spring-boot?-why-should-you-use-it)
 + [What Are the Differences Between Spring and Spring Boot?](#what-are-the-differences-between-spring-and-spring-boot)
 + [How set up a Spring Boot Application with Maven?](#how-set-up-a-spring-boot-application-with-maven)
 + [What Spring Boot Starters are available?](#what-spring-boot-starters-are-available)
+
+### What is Spring Data JPA?
+__Spring Data JPA__ is not a JPA provider but a specification — it is a library/framework that adds an extra layer of abstraction on the top of our JPA provider. It simply “hides” the Java Persistence API and the JPA provider behind its repository abstraction.
+
+__JPA__ is the sun specification for persisting objects in the enterprise application. 
+
+The __JPA Provider__ implements the Java Persistence API. 
+The Java Persistence API is used for managing, persisting, and accessing data between objects and the relational database. Hibernate is an ORM (Object Relational Mapping) tool that implements JPA specification.
+
+The implementation of JPA specifications is provided by many JPA providers, such as Hibernate, Toplink, iBatis, OpenJPA, etc.
+
+### What are main feature of Spring Data JPA?
+Main features:
+* Create and support repositories created with Spring and JPA
+* Support JPA queries
+* Support for batch loading, sorting, dynamical queries
+* Supports XML mapping for entities
+* Reduce code size for generic CRUD operations by using the CrudRepository
+
+### What is DAO?
+DAO = Data Access Object
 
 ### What is Spring Boot? Why should you use it?
 Spring Boot is another Java framework from Spring umbrella which aims to simplify the use of Spring Framework for Java development.
