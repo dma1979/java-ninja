@@ -1,11 +1,16 @@
 [All questions](README.md)
 
 # Networking
-+ [What is __http__ in networking?](#what-is-http-in-networking)
-+ [What is __https__ in networking?](#what-is-https-in-networking)
-+ [What are HTTP status codes?](#What-are-HTTP-status-codes)
+- [Networking](#networking)
+    - [What is JSON?](#what-is-json)
+    - [What is default port for http and https?](#what-is-default-port-for-http-and-https)
+    - [What are HTTP status codes?](#what-are-http-status-codes)
+    - [Name some com,mon response codes](#name-some-common-response-codes)
 
 [Table of content](#networking)
+
+### What is JSON?
+JSON is an acronym for JavaScript Object Notation. It uses JavaScript syntax, and the format is text only.
 
 ###What is __http__ in networking?
 HTTP means HyperText Transfer Protocol. 

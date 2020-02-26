@@ -7,6 +7,70 @@
 
 [Table of content](#common-java-questions)
 
+### What is Class in Java? 
+In Java, a class is a template used to create objects and define the data type. It acts as a building block for Java language-oriented systems.
+
+### What Is the Difference Between Static and Dynamic Loading?
+Static class loading involves the creation of objects and instances using new keywords, and dynamic class loading is done when the name of the class is not known at compile time.
+
+### What Is Multi-Threading?
+Multi-threading is a programming concept used to run multiple tasks in a concurrent manner within a single program.
+
+### By Whom and When was Java developed?
+Java was developed by James Gosling in Sun Microsystem in 1995.
+
+### What are JDK, JRE, and JVM Stand for?
+* JVM stands for Java Virtual Machine, which is a runtime environment for compiled Java class files.
+* JRE stands for Java Runtime Environment
+* JDK stands for Java Development Kit
+
+# Name one of the most Important Features of Java?
+Java is a platform independent language.
+
+### Do Java have "pointers"?
+No. Java doesn’t use pointers. It has a tough security. Instead of pointers, references are used in Java as they are safer and more secure when compared to a pointer.
+
+### What Are the Functions of JVM and JRE?
+* JVM provides a runtime environment for Java Byte Codes to be executed. 
+* JRE includes sets of files required by JVM during runtime.
+
+### What Is the Difference Between Overloading and Overriding?
+When there are two methods of the same name but different properties, it is overloading. Overriding occurs when there are two methods of the same name and properties, one is in the child class and the other is in the parent class. 
+
+### What Is the Default Size of the Load Factor in Hashing a Based Collection?
+The default size is 0.75, and the default capacity is computed as `Initial capacity * Load factor`
+
+### What Is a Package?
+A package is a collection of related classes and interfaces.
+
+### What's the Base Class of all Exception Classes?
+`Java.lang.Throwable` is the superclass of all exception classes, and all exception classes are derived from this base class.  
+
+### What Is the Difference Between `equals()` and `= =`  ?
+* `Equals()` method is used for checking the equality of two objects defined by business logic.
+*  `==` or the equality operator is used to compare primitives and objects.
+
+### What are Differences Between an Inner Class and a Subclass?
+* While Inner classes are in the same file, subclasses can be in another file. 
+* While subclasses have the methods of their parent class, inner classes get the methods they want.
+
+### What Is an Anonymous Class?
+The class defined without a name in a single line of code using new keyword is known as an anonymous class.
+
+### What Are Constructors in Java?
+In Java, the constructor is a block of code used to initialize an object.
+
+### What Are the Types of Constructors?
+There are two types of constructors:
+* Default constructor.  A constructor that has no parameter is known as default constructor.  If we don’t define a constructor in a class, the compiler creates a default constructor (with no arguments) for the class.
+* Parameterized constructor. A constructor that has known parameters is a parameterized constructor. If we want to initialize fields of the class with your own values, then use a parameterized constructor.
+
+### How Are Destructors Defined in Java?
+Since Java has its own garbage collection, no destructors are required to be defined.       Destruction of objects is automatically carried by the garbage collection mechanism.
+
+### What is Garbage Collection in Java?
+When an object is no longer used or referenced, garbage collection is called and the object is destroyed automatically.
+
 ### How Java achieves platform independence? 
 Combination of byte code and JVM makes Java program platform independent. 
 Java programs are platform independent but JVM is not.
@@ -184,5 +248,8 @@ We should create a serialVersionUID field in our class so if we change our class
 ### How to prevent the class from Serialization and Deserialization?
 We can override the default serialization behaviour inside our Java class by providing the implementation of writeObject and readObject methods.
 We can throw NotSerializableException exception from writeObject and readObject , if we do not want our class to be serialized or deserialized.
+
+### What's the Difference Between Stack and Queue?
+The difference between a stack and a queue is that the stack is based on the Last in First out (LIFO) principle, and a queue is based on FIFO (First In, First Out) principle.
 
 [All questions](README.md)
