@@ -63,6 +63,16 @@ Spring Boot Features:
 
 [Table of content](#spring-framework)
 
+### What Is Spring Cloud?
+For typical use cases, Spring Cloud provides the out of the box experiences and a sets of extensive features mentioned below:
+* Versioned and distributed configuration.
+* Discovery of service registration.
+* Service to service calls.
+* Routing.
+* Circuit breakers and load balancing.
+* Cluster state and leadership election.
+* Global locks and distributed messaging.
+  
 ### How set up a Spring Boot Application with Maven?
 Spring Boot can be included in a Maven project just like we would any other library. 
 There are several ways to do it:
@@ -138,6 +148,18 @@ public class MyConfiguration { }
 spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 ```
 [Table of content](#spring-framework)
+
+### How Is Spring Security Implemented In a Spring Boot Application?
+All you need to do is add the `spring-boot-starter-security` starter in the pom.xml file. You will also need to create a Spring config class that will override the required method while extending the `WebSecurityConfigurerAdapter` to achieve security in the application. 
+
+### Which Embedded Containers Are Supported by Spring Boot?
+Whenever you are creating a Java application, deployment can be done via two methods:
+* Using an application container that is external.
+* Embedding the container inside your jar file.
+Spring Boot contains Jetty, Tomcat, and Undertow servers, all of which are embedded.
+* Jetty – Used in a wide number of projects, Eclipse Jetty can be embedded in framework, application servers, tools, and clusters.
+* Tomcat – Apache Tomcat is an open source JavaServer Pages implementation which works well with embedded systems.
+* Undertow – A flexible and prominent web server that uses small single handlers to develop a web server.
 
 ### How to Register a Custom Auto-Configuration?
 To register an auto-configuration class, we must have its fully-qualified name listed under the `EnableAutoConfiguration` key in the `META-INF/spring.factories` file:
@@ -469,4 +491,33 @@ The default filename used is spring.log and the default directory used is the Ja
 logging.file=application.log
 logging.path=/var/log
 ```                    
+
+### What Do You Mean by End-To-End Testing of Microservices?
+It validates all the processes in the workflow to check if everything is working as expected. It also ensures that the system works in a unified manner, thereby satisfying the business requirement.
+
+### How Can You Set Up Service Discovery?
+There are multiple ways to set up service discovery. 
+One that I think to be most efficient, `Eureka by Netflix`. It is a hassle free procedure that does not weigh much on the application. Plus, it supports numerous types of web applications.
+
+Eureka configuration involves two steps – client configuration and server configuration.
+Client configuration can be done easily by using the property files. In the clas spath, Eureka searches for a eureka-client.properties file. It also searches for overrides caused by the environment in property files which are environment specific.
+
+For server configuration, you have to configure the client first. Once that is done, the server fires up a client which is used to find other servers. The Eureka server, by default, uses the Client configuration to find the peer server.
+
+### Why Would You Need Reports and Dashboards in Microservices?
+Reports and dashboards are mainly used to monitor and upkeep microservices. There are multiple tools that help to serve this purpose. 
+Reports and dashboards can be used to:
+* Find out which microservices expose what resources.
+* Find out the services which are impacted whenever changes in a component occur.
+* Provide an easy point which can be accessed whenever documentation is required.
+* Versions of the components which are deployed.
+* To obtain a sense of maturity and compliance from the components.
+
+## What is Domain Driven Design?
+The main focus is on the core domain logic. Complex designs are detected based on the domain’s model. This involves regular collaboration with domain experts to resolve issues related to the domain and improve the model of the application. 
+The core fundamentals of DDD:
+* DDD focuses mostly on domain logic and the domain itself.
+* Complex designs are completely based on the domain’s model.
+* To improve the design of the model and fix any emerging issues, DDD constantly works in collaboration with domain experts.
+
 [All questions](README.md)
