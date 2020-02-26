@@ -520,4 +520,19 @@ The core fundamentals of DDD:
 * Complex designs are completely based on the domain’s model.
 * To improve the design of the model and fix any emerging issues, DDD constantly works in collaboration with domain experts.
 
+### How to Configure Spring Boot Application Logging?
+Spring Boot comes with added support for Log4J2, Java Util Logging, and Logback. It is usually pre-configured as console output. They can be configured by only specifying logging.level in the application.properties file.
+`logging.level.spring.framework=debug`
+
+### What Are the Ways to Access RESTful Microservices?
+* Using a REST template that is load balanced.
+* Using multiple microservices.
+
+###  Where Do We Use `@WebMVCTest` Annotation?
+`@WebMvcTest` is used for unit testing Spring MVC applications. As the name suggests, it focuses entirely on Spring MVC components. For example,
+F.e. `@WebMvcTest(value = ToTestController.class, secure = false)`:
+Here, the objective is to only launch ToTestController. Until the unit test has been executed, other mappings and controllers will not be launched.
+
+### What Is Idempotence and How Is it Used?
+
 [All questions](README.md)
