@@ -13,9 +13,6 @@ In Java, a class is a template used to create objects and define the data type. 
 ### What Is the Difference Between Static and Dynamic Loading?
 Static class loading involves the creation of objects and instances using new keywords, and dynamic class loading is done when the name of the class is not known at compile time.
 
-### What Is Multi-Threading?
-Multi-threading is a programming concept used to run multiple tasks in a concurrent manner within a single program.
-
 ### By Whom and When was Java developed?
 Java was developed by James Gosling in Sun Microsystem in 1995.
 
@@ -251,5 +248,68 @@ We can throw NotSerializableException exception from writeObject and readObject 
 
 ### What's the Difference Between Stack and Queue?
 The difference between a stack and a queue is that the stack is based on the Last in First out (LIFO) principle, and a queue is based on FIFO (First In, First Out) principle.
+
+### What Is Multi-Threading?
+Multi-threading is a programming concept used to run multiple tasks in a concurrent manner within a single program.
+
+### What Is Deadlock?
+A _deadlock_ occurs when two or more threads wait forever for a lock or resource held by another of the threads.
+
+### Deadlock Example?
+```java
+    private Lock lock1 = new ReentrantLock(true);
+    private Lock lock2 = new ReentrantLock(true);
+ 
+    public static void main(String[] args) {
+        DeadlockExample deadlock = new DeadlockExample();
+        new Thread(deadlock::operation1, "T1").start();
+        new Thread(deadlock::operation2, "T2").start();
+    }
+ 
+    public void operation1() {
+        lock1.lock();
+        print("lock1 acquired, waiting to acquire lock2.");
+        sleep(50);
+ 
+        lock2.lock();
+        print("lock2 acquired");
+ 
+        print("executing first operation.");
+ 
+        lock2.unlock();
+        lock1.unlock();
+    }
+ 
+    public void operation2() {
+        lock2.lock();
+        print("lock2 acquired, waiting to acquire lock1.");
+        sleep(50);
+ 
+        lock1.lock();
+        print("lock1 acquired");
+ 
+        print("executing second operation.");
+ 
+        lock1.unlock();
+        lock2.unlock();
+    }
+ 
+```
+
+Result:
+```batch
+Thread T1: lock1 acquired, waiting to acquire lock2.
+Thread T2: lock2 acquired, waiting to acquire lock1.
+```
+
+### What Is Livelock?
+_Livelock_ is another concurrency problem and is similar to deadlock. 
+In livelock, two or more threads keep on transferring states between one another instead of waiting infinitely. 
+Consequently, the threads are not able to perform their respective tasks.
+
+A great example of livelock is a messaging system where, when an exception occurs, the message consumer rolls back the transaction 
+and puts the message back to the head of the queue. 
+Then the same message is repeatedly read from the queue, only to cause another exception and be put back on the queue. 
+The consumer will never pick up any other message from the queue.
 
 [All questions](README.md)

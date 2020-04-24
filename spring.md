@@ -534,5 +534,6 @@ F.e. `@WebMvcTest(value = ToTestController.class, secure = false)`:
 Here, the objective is to only launch ToTestController. Until the unit test has been executed, other mappings and controllers will not be launched.
 
 ### What Is Idempotence and How Is it Used?
+Idempotence refers to a scenario where you perform a task repetitively but the end result remains constant or similar. Idempotence is mostly used as a data source or a remote service in a way that when it receives more than one set of instructions, it processes only one set of instructions.
 
 [All questions](README.md)
