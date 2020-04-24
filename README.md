@@ -1,6 +1,9 @@
 # java-ninja
 The way how to become Java Ninja. Structured questions and answers for Java fans.
 
+> Click :star:if you like the project. Any pull requests are highly appreciated. 
+Follow me [@DzmitryMarudau](https://twitter.com/DzmitryMarudau) for technical remarks/proposals/feedbacks.
+
 # Question by level
 + [Junior Java Developer](#juniour-developer)
 + [Middle Java Developer](#middle-developer)
