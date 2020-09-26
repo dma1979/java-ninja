@@ -31,8 +31,9 @@ Main features:
 DAO = Data Access Object
 
 ### What is Spring Boot? Why should you use it?
-Spring Boot is another Java framework from Spring umbrella which aims to simplify the use of Spring Framework for Java development.
-It removes most of the pain associated with dealing with Spring e.g. a lot of configuration and dependencies and a lot of manual setups.<BR/>
+__Spring Boot__ is another Java framework from Spring umbrella which aims to simplify the use of Spring Framework for Java development.
+It removes most of the pain associated with dealing with Spring e.g. a lot of configuration and dependencies and a lot of manual setups.
+Aims at *Rapid Application Development*!
 
 Why should you use it? Well, Spring Boot not only provides a lot of convenience by auto-configuration a lot of things for you 
 but also improves the productivity because it lets you focus only on writing your business logic.
@@ -45,7 +46,19 @@ There are many reasons to use Spring Boot. In fact, it's now the standard way to
 
 [Table of content](#spring-framework)
 
-### What Are the Differences Between Spring and Spring Boot?
+### Why should you use Spring Boot?
+- Stability
+- Based on JVM
+- Connectivity
+- Cloud-native
+- Flexibility
+- Open Source
+
+[Table of content](#spring-framework)
+
+### What are the differences between Spring and Spring Boot?
+* __Spring__ is a web application framework based on Java.
+* __Spring Boot__ is a module of Spring.
 The __Spring Framework__ provides multiple features that make the development of web applications easier. 
 These features include dependency injection, data binding, aspect-oriented programming, data access, and many more.
 
@@ -53,18 +66,34 @@ Over the years, Spring has been growing more and more complex, and the amount of
 __Spring Boot__ makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 Most Spring Boot applications need very little Spring configuration.
 
-Spring Boot Features:
+### What are the advantages of Spring Boot?
+
+__Spring Boot__ Advantages:
+* provides autoconfiguration
 * Create stand-alone Spring applications
 * Automatically configure Spring and 3rd party libraries whenever possible
 * Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files)
 * Provide opinionated 'starter' dependencies to simplify your build configuration
-* Provide production-ready features such as metrics, health checks and externalized configuration
-* Absolutely no code generation and no requirement for XML configuration
+* Consist of a wide range of APIs for monitoring and managing applications in dev and prod
+* Provide CLI tool to develop and test application
+* Integrates with Spring Ecosystem like Spring JDBC, Spring ORM, Spring Data, Spring Security by avoiding boilerplate code
+(absolutely no code generation and no requirement for XML configuration) 
+
+
+### What are the features of Spring Boot?
+
+__Spring Boot__ Features:
+* Spring CLI(avoid boilerplate code)
+* Starter Dependency(aggregaes common dependencies together)
+* Spring Initializer(allows to create internal project structure)
+* Auto-configuration(loads the default configurations according tot the project)
+* Spring Actuator(provides help while running application)
+* Logging and security(ensures that all the applications are properly secured without any hassle)
 
 [Table of content](#spring-framework)
 
 ### What Is Spring Cloud?
-For typical use cases, Spring Cloud provides the out of the box experiences and a sets of extensive features mentioned below:
+For typical use cases, __Spring Cloud__ provides the out of the box experiences and a sets of extensive features mentioned below:
 * Versioned and distributed configuration.
 * Discovery of service registration.
 * Service to service calls.
