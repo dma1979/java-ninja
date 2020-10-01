@@ -139,8 +139,14 @@ __Nashorn__ is the new Javascript processing engine for the Java platform that s
 Until JDK 7, the Java platform used Mozilla Rhino for the same purpose. as a Javascript processing engine.
 Nashorn provides better compliance with the ECMA normalized JavaScript specification and better runtime performance than its predecessor.
     
-### What Is __JJS__?
+### What Is __jjs__?
 In Java 8, __jjs__ is the new executable or command line tool used to execute Javascript code at the console.
+    
+### What is __jcmd__`
+`jcmd` is a utility which sends diagnostic command requests to a running Java Virtual Machine i.e. JVM.
+* It gets various runtime information from a JVM. 
+* It must be used on the same machine on which JVM is running! (!)
+* With this tool it is possible to tune the JVM on the fly
     
 ### What Is a Stream? How Does It Differ from a Collection?
 In simple terms, a __stream__ is an iterator whose role is to accept a set of actions to apply on each of the elements it contains.<BR/>
